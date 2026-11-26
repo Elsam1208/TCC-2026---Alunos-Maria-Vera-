@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   ALT WEAR
+  </title>
+  <link href="../css/style.css" rel="stylesheet"/>
+  <meta content="Loja virtual ALT WEAR" name="description"/>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container header-inner">
+    <a class="logo" href="../index.html">
+     ALT WEAR
+    </a>
+    <nav class="nav" id="nav">
+     <a href="../index.html">Início</a>
+     <a href="../paginas/produtos.html">Loja</a>
+     <a href="../paginas/produtos.html?categoria=Partes%20Inferiores">Partes Inferiores</a>
+     <a href="../paginas/produtos.html?categoria=Partes%20Superiores">Partes Superiores</a>
+     <a href="../paginas/produtos.html?categoria=Acessórios">Acessórios</a>
+     <a href="../paginas/produtos.html?categoria=Conjuntos">Conjuntos</a>
+    </nav>
+    <div class="header-actions">
+     <a aria-label="Minha conta" class="icon-btn" href="../paginas/perfil.html">
+      👤
+     </a>
+     <a aria-label="Carrinho" class="icon-btn" href="../paginas/carrinho.html">
+      🛒
+      <span class="badge" id="cartCount">
+       0
+      </span>
+     </a>
+     <button aria-label="Abrir menu" class="icon-btn mobile-menu" id="menuBtn">
+      ☰
+     </button>
+    </div>
+   </div>
+  </header>
+  <main class="auth-wrap">
+   <form class="auth" id="loginForm">
+    <p class="eyebrow">
+     ALT WEAR
+    </p>
+    <h1>
+     Entrar na conta
+    </h1>
+    <div class="form-group">
+     <label>
+      E-mail
+     </label>
+     <input class="input" id="email" required="" type="email"/>
+    </div>
+    <div class="form-group">
+     <label>
+      Senha
+     </label>
+     <input class="input" id="senha" required="" type="password"/>
+    </div>
+    <button class="btn wide">
+     Entrar
+    </button>
+    <p class="muted" style="margin-top:16px;text-align:center">
+     Ainda não tem conta?
+     <a href="cadastro.html">
+      <u>
+       Cadastre-se
+      </u>
+     </a>
+    </p>
+   </form>
+  </main>
+  
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h2>ALT WEAR</h2>
+            <p class="muted">Moda urbana, identidade e atitude.</p>
+        </div>
+
+        <div>
+            <b>Loja</b>
+            <p><a href="../paginas/produtos.html">Produtos</a></p>
+            <p><a href="../paginas/carrinho.html">Carrinho</a></p>
+            <p><a href="../paginas/perfil.html">Minha conta</a></p>
+        </div>
+
+        <div>
+            <b>Ajuda</b>
+            <p><a href="../paginas/localizacao.html">Localização</a></p>
+            <p><a href="../paginas/devolucoes.html">Trocas e devoluções</a></p>
+            <p><a href="../paginas/carrinho.html#pagamento">Pagamento seguro</a></p>
+        </div>
+
+        <div>
+            <b>Acessibilidade</b>
+            <p><button class="footer-link" type="button" data-access-open="true">Abrir recursos</button></p>
+        </div>
+    </div>
+</footer>
+
+<div class="access" id="accessibilityWidget">
+    <button class="access-main" type="button" id="accessBtn" aria-expanded="false" aria-controls="accessPanel">
+        ♿ <span>Acessibilidade</span>
+    </button>
+
+    <div class="access-panel" id="accessPanel" aria-hidden="true">
+        <div class="access-title">Recursos de acessibilidade</div>
+        <button type="button" data-access-action="read">🔊 Ler o texto</button>
+        <button type="button" data-access-action="links">🔗 Destacar links</button>
+        <button type="button" data-access-action="font">A+ Aumentar</button>
+        <button type="button" data-access-action="spacing">↔ Espaçamento</button>
+        <button type="button" data-access-action="contrast">◐ Alto contraste</button>
+        <button type="button" data-access-action="reset">↺ Restaurar</button>
+    </div>
+</div>
+<script src="../js/produtos.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../js/database.js"></script>
+    <script src="../js/app.js">
+  </script>
+ </body>
+</html>

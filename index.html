@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALT WEAR — Moda urbana</title>
+    <meta name="description" content="ALT WEAR — moda urbana, streetwear e peças com atitude.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+    <header class="home-header">
+        <div class="home-header-top container">
+            <a class="home-logo" href="index.html" aria-label="ALT WEAR — início">ALT WEAR</a>
+
+            <form class="home-search" id="homeSearch" action="paginas/produtos.html" method="get">
+                <input id="homeSearchInput" name="busca" type="search" placeholder="Busque por roupas, categorias ou marcas..." aria-label="Buscar produtos">
+                <button type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+
+            <div class="home-actions">
+                <a href="paginas/perfil.html" aria-label="Minha conta" class="home-icon">♙</a>
+                <a href="paginas/carrinho.html" aria-label="Carrinho" class="home-icon home-cart">🛒 <span id="cartCount" class="badge">0</span></a>
+            </div>
+        </div>
+
+        <div class="home-nav-wrap">
+            <nav class="home-nav container" aria-label="Navegação principal">
+                <a class="active" href="index.html">Início</a>
+                <a href="paginas/produtos.html">Produtos</a>
+                <a href="paginas/produtos.html">Categorias <span>⌄</span></a>
+                <a href="paginas/perfil.html">Minha conta</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-hero" aria-label="Campanha ALT WEAR">
+            <img src="img/altwear_banner.png" alt="ALT WEAR — Estilo, atitude, sem limites">
+        </section>
+
+        <section class="home-categories">
+            <div class="container">
+                <div class="home-section-head">
+                    <div>
+                        <p class="home-kicker">EXPLORE POR CATEGORIA</p>
+                        <h1>Nossas Categorias</h1>
+                    </div>
+                    <a href="paginas/produtos.html">Ver todas <span>→</span></a>
+                </div>
+
+                <div class="home-category-grid">
+                    <a class="home-category" href="paginas/produtos.html?categoria=Partes%20Inferiores">
+                        <img src="img/calca_jeans_baggy_azul.jpg" alt="Partes Inferiores">
+                        <strong>Partes Inferiores</strong><span>→</span>
+                    </a>
+                    <a class="home-category" href="paginas/produtos.html?categoria=Partes%20Superiores">
+                        <img src="img/polo_cinza_grafica.jpg" alt="Partes Superiores">
+                        <strong>Partes Superiores</strong><span>→</span>
+                    </a>
+                    <a class="home-category" href="paginas/produtos.html?categoria=Acessórios">
+                        <img src="img/cinto_vermelho.jpg" alt="Acessórios">
+                        <strong>Acessórios</strong><span>→</span>
+                    </a>
+                    <a class="home-category" href="paginas/produtos.html?categoria=Conjuntos">
+                        <img src="img/conjunto_rosa.jpg" alt="Conjuntos">
+                        <strong>Conjuntos</strong><span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-bestsellers">
+            <div class="container">
+                <div class="home-section-head dark">
+                    <div>
+                        <h2>Mais vendidos</h2>
+                    </div>
+                    <a href="paginas/produtos.html">Ver todos <span>→</span></a>
+                </div>
+
+                <div class="home-products-shell">
+                    <button class="home-carousel-arrow prev" id="carouselPrev" type="button" aria-label="Produtos anteriores">‹</button>
+                    <div class="home-products-viewport">
+                        <div class="home-products-track" id="featured"></div>
+                    </div>
+                    <button class="home-carousel-arrow next" id="carouselNext" type="button" aria-label="Próximos produtos">›</button>
+                </div>
+                <div id="carouselDots" class="carousel-dots home-dots" aria-label="Selecionar página"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <div class="home-service-strip">
+            <div class="container home-service-grid">
+                <div class="service-item"><span class="service-icon">🚚</span><div><strong>Frete grátis</strong><small>Em compras acima de R$ 199,90</small></div></div>
+                <div class="service-item"><span class="service-icon">♢</span><div><strong>Compra segura</strong><small>Seus dados protegidos</small></div></div>
+                <div class="service-item"><span class="service-icon">▣</span><div><strong>Diversas formas de pagamento</strong><small>Cartão, Pix e mais</small></div></div>
+                <div class="service-item location-service"><span class="service-icon">⌖</span><div><strong>Nossa localização</strong><small>Av. Paulista, 1578 — Bela Vista, São Paulo - SP</small><a href="paginas/localizacao.html">Ver no mapa →</a></div></div>
+            </div>
+        </div>
+        <div class="home-footer-links">
+            <div class="container home-footer-grid">
+                <div><h3>ALT WEAR</h3><p>Moda urbana, identidade e atitude.</p></div>
+                <div><strong>Loja</strong><a href="paginas/produtos.html">Produtos</a><a href="paginas/carrinho.html">Carrinho</a><a href="paginas/perfil.html">Minha conta</a></div>
+                <div><strong>Ajuda</strong><a href="paginas/localizacao.html">Localização</a><a href="paginas/devolucoes.html">Trocas e devoluções</a><a href="paginas/carrinho.html#pagamento">Pagamento seguro</a></div>
+                <div><strong>Acessibilidade</strong><button type="button" class="footer-link" data-access-open="true">Abrir recursos</button></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="access" id="accessibilityWidget">
+        <button class="access-main" type="button" id="accessBtn" aria-expanded="false" aria-controls="accessPanel">
+            ♿ <span>Acessibilidade</span>
+        </button>
+        <div class="access-panel" id="accessPanel" aria-hidden="true">
+            <div class="access-title">Recursos de acessibilidade</div>
+            <button type="button" data-access-action="read">🔊 Ler o texto</button>
+            <button type="button" data-access-action="links">🔗 Destacar links</button>
+            <button type="button" data-access-action="font">A+ Aumentar</button>
+            <button type="button" data-access-action="spacing">↔ Espaçamento</button>
+            <button type="button" data-access-action="contrast">◐ Alto contraste</button>
+            <button type="button" data-access-action="reset">↺ Restaurar</button>
+        </div>
+    </div>
+
+    <script src="js/produtos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
